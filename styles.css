@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.container{
+    background-color: rgb(26, 26, 94);
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.form{
+    display: grid;
+    grid-template-columns: auto auto;   
+    row-gap: 1rem;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    margin: 0;
+    text-align: center;
+}
+
+label{
+    font-weight: bold;
+}
+
+.character-amount-container{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.number-input{
+    width: 2rem;
+}
+
+.password-display{
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border: 1px solid #333;
+    height: 2rem;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    border-radius: .5rem;
+}
+
+.btn{
+    grid-column: span 2;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.btn:hover{
+    background-color: gray;
+}
+
+
+
+
+/* RANGE INPUT */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15rem;
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #40afff;
+    height: 0.5rem;
+}
+  
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+    background: #40afff;
+    height: 0.5rem;
+}
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -12px; /* Centers thumb on the track */
+    background-color: #f5feff;
+    height: 2rem;
+    width: 1rem;  
+ }
